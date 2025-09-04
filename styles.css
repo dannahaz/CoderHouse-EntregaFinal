@@ -11,24 +11,30 @@
     width: auto;
 }
 
-header {
-    display: flex;
-    height: 15vh;
-    justify-content: space-around;
-    background-color: rgb(255, 255, 255);
-    font-family: "Rubik Spray Paint", system-ui;
-    padding: 1px; 
-    top: 0;
-    position: sticky;
-    align-items: center;
-}
-
 body {
     font-family: Roboto;
     background-color: rgb(185, 185, 185);
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr 8fr 1fr;
 }
 
-
+header {
+    display: grid;
+    height: 1vh;
+    justify-content: space-around;
+    background-color: rgb(255, 255, 255);
+    font-family: "Rubik Spray Paint", system-ui; 
+    top: 0;
+    position: sticky;
+    align-items: center;
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+    align-content: center;
+    justify-items: center;
+}
 
 footer{
     display: flex;
@@ -38,17 +44,19 @@ footer{
     border: 2px solid rgb(176, 176, 176); 
     background-image: url(./assets/img/footer.jpg);
     background-size: cover;
-        flex-flow: row wrap;
+    flex-flow: row wrap;
     justify-content: space-evenly;
-
-}
-
-.foto01{
-    height: 50vh;
-    width: auto;
+    grid-column: 1/4;
+    grid-row: 3/4;
+    align-content: center;
+    justify-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
 }
 
 #imgfooter {
+    display: flex;
     height: 15vh;
     width: auto;
 }
@@ -102,6 +110,8 @@ a{
   display: flex;
   flex-direction: column;
   gap: 15px;
+ grid-column: 1 / 4;
+ grid-row: 2 / 3;
 }
 
 .carousel slide {
@@ -114,4 +124,82 @@ form{
     display: flex;
     flex-direction: column;
     padding: 15px;
+
+}
+
+.foto01{
+    display: grid;
+    height: 50vh;
+    width: 50vp;
+}
+
+.header{
+ grid-column: 1/4;
+ grid-row: 1/2;
+}
+
+
+#clown{
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    height: auto;
+    width: 60vw;    
+}
+
+#out{
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 2/2;
+    height: auto;
+    height: auto;
+    width: 60vw;    
+}
+#fridge{
+    display: grid;
+    grid-column: 1/3;
+    grid-row: 2/3;
+    height: auto;
+    height: auto;
+    width: 60vw;    
+}
+#trash{
+    display: flex;
+    height: auto;
+    width: 60vw;    
+}
+
+.pp{
+    display: flex;
+    height: auto;
+    width: 30vw;   
+    justify-content: center;
+}
+
+.div{
+    display: flex;
+}
+
+.div2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    align-items: center;
+    justify-items: center
+}
+
+
+.yo{
+    display: grid;
+    height: auto;
+    width: 10vw;
+}
+
+.div3{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr ;
+
+
 }
