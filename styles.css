@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Rubik+Spray+Paint&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Un ejemplo de reset común */
+}
+
+.logoDH {
+    height: 10vh;
+    width: auto;
+}
+
+header {
+    background-color: rgb(255, 255, 255);
+    font-size: 1em;
+    font-family: "Rubik Spray Paint", system-ui;
+}
+
+body {
+    font-family: Roboto;
+}
+
+
+
+footer{
+    border: 2px solid rgb(176, 176, 176); 
+    background-image: url(./assets/img/footer.jpg);
+    background-size: cover;
+}
+
+.foto01{
+    height: 50vh;
+    width: auto;
+}
+
+#imgfooter {
+    height: 15vh;
+    width: auto;
+}
+
+.logos {
+    height: 5rem;
+    width: auto;
+}
+
+nav {
+    font-family: "Rubik Spray Paint", system-ui;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
