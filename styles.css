@@ -9,6 +9,7 @@
 .logoDH {
     height: 10vh;
     width: auto;
+    display: grid;
 }
 
 body {
