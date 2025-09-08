@@ -103,11 +103,15 @@ a {
   display: flex;
   justify-content: space-around;
 }
+.nav :hover {
+  background-color: rgb(97, 97, 97);
+  border-radius: 50px;
+  padding: 5px;
+}
 
 .main {
   display: flex;
   flex-direction: column;
-  gap: 15px;
   grid-column: 1/4;
   grid-row: 2/3;
 }
